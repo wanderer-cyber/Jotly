@@ -55,7 +55,7 @@ const  MyNotes = () => {
     <div className=' grid grid-cols-5  md:grid-cols-3 sm:grid-cols-2 p-10'>
         {notes.length===0 ? (<p>No Notes Found</p>): (
             notes.map((note,index)=>(
-             <div key={index} className='m-5 bg-[#5b5f97ff] h-70 w-45 rounded-2xl p-2'>
+             <div key={index} className='m-5 bg-[#5b5f97ff] h-75 w-45 rounded-2xl p-2'>
             <div className='h-45 bg-[#ffc145ff] rounded-t-2xl  rounded-b-xl p-2 overflow-hidden'>
                 {note.content}
             </div>
