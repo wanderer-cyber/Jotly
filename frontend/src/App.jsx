@@ -91,7 +91,7 @@ function App() {
                   </div>
 
                   <div className="bg-[#08FFB5] w-110 h-110 rounded-full m-0 absolute bottom-20 right-1 mr-0 mb-0 flex items-center pr-0">
-                    <img src="./src/assets/Jotly.png" className="rouned-xl" alt="Logo"/>
+                    <img src="/assets/Jotly.png" className="rouned-xl" alt="Logo"/>
                   </div>
                 </div>
               </section>

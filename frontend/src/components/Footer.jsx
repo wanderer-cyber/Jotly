@@ -24,7 +24,7 @@ function Footer() {
           <p className="text-black italic">I am a beginner in web dev field, just doing some projects having fun.. </p>
         </div>
         <div>
-          <img src="./src/assets/2.png" alt="" className="h-65 w-65 lg:mg-100 ml-auto rounded-full"/>
+          <img src="/assets/2.png" alt="" className="h-65 w-65 lg:mg-100 ml-auto rounded-full"/>
         </div>
       </div>
 
