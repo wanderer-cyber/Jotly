@@ -39,7 +39,7 @@ function Login({loginUser}) {
 
   return (
     <section className="text-xl">
-      <div className="flex flex-col items-center pt-50">
+      <div className="flex flex-col items-center pt-50 overflow-hidden">
         <h1 className="text-3xl font-bold">Login Page</h1>
         <form
           onSubmit={handleSubmit}
