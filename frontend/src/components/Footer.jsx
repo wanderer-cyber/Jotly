@@ -4,8 +4,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="flex flex-col bg-[#08FFB5]">
-      <div className="flex py-10 space-x-30">
+    <footer className="flex flex-col bg-[#08FFB5] pt-10">
+      <div className="lg:flex lg:py-10 lg:space-x-30 grid grid-cols-3">
         <div>
           <h2 className="text-2xl text-black font-bold pr-10">Jotly</h2>
         </div>

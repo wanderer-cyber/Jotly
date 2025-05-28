@@ -90,7 +90,11 @@ function App() {
                     </p>
                   </div>
 
-                  <div className="bg-[#08FFB5] w-110 h-110 rounded-full m-0 absolute bottom-20 right-1 mr-0 mb-0 flex items-center pr-0">
+                  <div className="bg-[#08FFB5] lg:w-100 lg:h-100
+                  md:w-50 md:h-50
+                  sm:w-44 sm:h-44
+                  h-44 w-44
+                  rounded-full m-0 absolute bottom-20 right-1 mr-0 mb-0 flex items-center pr-0 ">
                     <img src="/assets/Jotly.png" className="rouned-xl" alt="Logo"/>
                   </div>
                 </div>
