@@ -35,7 +35,7 @@ const Signin = ({registerUser}) => {
     <section>
       <div className="flex flex-col text-2xl items-center justify-center overflow-hidden">
         <form
-          className="flex flex-col bg-[#f0a40d]/50 lg:h-120 lg:w-100 md:h-120 md:w-100 sm:h-120 sm:w-90 h-100 w-90 mt-50 rounded-2xl items-center space-y-1 "
+          className="flex flex-col bg-[#f0a40d]/50 lg:h-120 lg:w-100 md:h-120 md:w-100 sm:h-120 sm:w-90 h-120 w-90 mt-50 rounded-2xl items-center space-y-1 "
           onSubmit={handleSubmit}
         >
           <h1 className="pt-5 text-3xl font-bold">Sign Up</h1>
@@ -44,7 +44,7 @@ const Signin = ({registerUser}) => {
             <input
               type="email"
               placeholder=" Enter email"
-              className="bg-white text-black rounded "
+              className="bg-white text-black rounded"
               value={email} onChange={e=>setEmail(e.target.value)}
             />
           </div>
