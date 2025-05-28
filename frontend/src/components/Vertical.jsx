@@ -24,7 +24,7 @@ const Vertical = () => {
         />
 
         <h1 className="font-bold text-xl font-stretch-condensed m-5  w-50 p-5">
-          Hello User
+          Hello
         </h1>
 
         <nav className="min-h-screen bg-[#5b5f97ff] w-[50] text-xl font-bold">
