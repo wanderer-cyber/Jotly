@@ -33,7 +33,7 @@ const Signin = ({registerUser}) => {
 
   return (
     <section>
-      <div className="flex flex-col text-2xl items-center justify-center">
+      <div className="flex flex-col text-2xl items-center justify-center overflow-hidden">
         <form
           className="flex flex-col bg-[#f0a40d]/50 lg:h-120 lg:w-100 md:h-120 md:w-100 sm:h-120 sm:w-90 h-100 w-90 mt-50 rounded-2xl items-center space-y-1 "
           onSubmit={handleSubmit}
