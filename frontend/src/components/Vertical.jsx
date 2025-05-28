@@ -13,8 +13,8 @@ const Vertical = () => {
   return (
      <div className="bg-[#5b5f97ff] w-[250px] p-10 hidden md:block">
         <img
-          src="src/assets/profile.webp"
-          alt="This is an image"
+          src="/assets/profile.webp"
+          alt="Profile image"
           className="w-30 h-30 p-2 rounded-full m-10"
         />
 

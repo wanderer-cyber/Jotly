@@ -12,9 +12,16 @@ app=Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
 
 
+db_url = os.environ.get('DATABASE_URL', '')
+
+if db_url.startswith("postgres://"):
+    db_url = db_url.replace("postgres://", "postgresql://")
+else:
+    db_url="sqlite:///app.db"
+
+app.config['SQLALCHEMY_DATABASE_URI'] = db_url
 
 
-app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///app.db'
 app.config['JWT_SECRET_KEY'] = 'SuperKey' 
 jwt=JWTManager(app)
 db=SQLAlchemy(app)
