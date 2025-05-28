@@ -13,7 +13,7 @@ function Update() {
         e.preventDefault();
         const token=localStorage.getItem('token');
         try{
-             await axios.post(`http://localhost:5000/update/${state.id}`, {
+             await axios.post(`https://jotly-backend.onrender.com/update/${state.id}`, {
         title,
         content,
       },{

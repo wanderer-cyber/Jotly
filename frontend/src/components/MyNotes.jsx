@@ -9,7 +9,7 @@ const  MyNotes = () => {
        const fetchn = async () => {
     try {
       const token = localStorage.getItem("token");
-      const response = await axios.get("http://localhost:5000/notes", {
+      const response = await axios.get("https://jotly-backend.onrender.com/notes", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

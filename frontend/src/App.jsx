@@ -24,7 +24,7 @@ function App() {
   const registerUser = async (userData) => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/signup",
+        "https://jotly-backend.onrender.com/signup",
         userData
       );
       return response.data;
@@ -36,7 +36,7 @@ function App() {
   const loginUser = async (userData) => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/login",
+        "https://jotly-backend.onrender.com/login",
         userData
       );
       return response.data;
@@ -49,7 +49,7 @@ function App() {
     try {
       const token = localStorage.getItem("token");
       console.log(token)
-      const response = await axios.post("http://localhost:5000/note", Notes, {
+      const response = await axios.post("https://jotly-backend.onrender.com/note", Notes, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
