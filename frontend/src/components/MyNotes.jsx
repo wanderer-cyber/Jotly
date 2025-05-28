@@ -28,7 +28,7 @@ const  MyNotes = () => {
   const deleteNote=async(noteId)=>{
     try{
       const token=localStorage.getItem('token')
-      const response=await fetch(`http://localhost:5000/delete/${noteId}`,{method:'DELETE',headers:{
+      const response=await fetch(`https://jotly-backend.onrender.com/delete/${noteId}`,{method:'DELETE',headers:{
         Authorization: `Bearer ${token}`
       }});
 
