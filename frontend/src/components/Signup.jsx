@@ -35,10 +35,10 @@ const Signin = ({registerUser}) => {
     <section>
       <div className="flex flex-col text-2xl items-center justify-center">
         <form
-          className="flex flex-col bg-[#f0a40d]/50  h-120 w-100 mt-50 rounded-2xl items-center space-y-1 "
+          className="flex flex-col bg-[#f0a40d]/50 lg:h-120 lg:w-100 md:h-120 md:w-100 sm:h-120 sm:w-90 h-100 w-90 mt-50 rounded-2xl items-center space-y-1 "
           onSubmit={handleSubmit}
         >
-          <h1 className="pt-5 text-2xl">Sign Up</h1>
+          <h1 className="pt-5 text-3xl font-bold">Sign Up</h1>
           <div className="flex flex-col mt-5 pl-5 pr-8 rounded-2xl">
             <label>Email</label>
             <input
@@ -66,9 +66,6 @@ const Signin = ({registerUser}) => {
               value={confirmpassword} onChange={e=>setConfirmPassword(e.target.value)}
             />
           </div>
-          <a href="#" className="underline text-purple-800 pt-2">
-            Forget Password
-          </a>
           <button
             className="m-10
             bg-[#2630b1] rounded-xl  w-50 p-2

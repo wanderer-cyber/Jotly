@@ -43,7 +43,7 @@ function Login({loginUser}) {
         <h1 className="text-3xl font-bold">Login Page</h1>
         <form
           onSubmit={handleSubmit}
-          className="bg-[#f0a40d]/50 h-100 w-100 flex flex-col rounded-xl">
+          className="bg-[#f0a40d]/50 h-100 w-100 flex flex-col rounded-xl ">
             <div className="flex flex-col items-cent">
               <label className="ml-5 mt-20">Email</label>
               <input
