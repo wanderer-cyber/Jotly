@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 const Vertical = () => {
+    const [showSidebar,sestShowSidebar]=useState(false); 
+
+
+
+
     const navigate=useNavigate();
     const logout=()=>{
         localStorage.removeItem("token");
@@ -9,9 +14,9 @@ const Vertical = () => {
         navigate("/login")
     }
 
-
   return (
-     <div className="bg-[#5b5f97ff] w-[250px] p-10 hidden md:block">
+     <div className="bg-[#5b5f97ff] w-[250px] p-10 block">
+
         <img
           src="/assets/profile.webp"
           alt="Profile image"
@@ -38,11 +43,6 @@ const Vertical = () => {
               </button>
             </li>
             </Link>
-            {/* <li>
-              <button className="border-2 border-transparent m-0 w-50 p-5 hover:border-amber-100 hover:border-2 cursor-pointer rounded-3xl">
-                User Profile
-              </button>
-            </li> */}
               <li>
                 <button className="border-2 border-transparent m-0 w-50 p-5 hover:border-amber-100 hover:border-2 cursor-pointer active:bg-[#3b3e65] rounded-3xl" onClick={()=>logout()}>
                   Log Out
@@ -54,4 +54,4 @@ const Vertical = () => {
   )
 }
 
-export default Vertical
+export default Vertical;
